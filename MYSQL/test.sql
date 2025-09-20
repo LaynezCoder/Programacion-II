@@ -25,8 +25,11 @@ INSERT INTO Producto (nombre, codigoBarras, precio, descripcion, idProveedor) VA
 INSERT INTO Producto (nombre, codigoBarras, precio, descripcion, idProveedor) VALUES ("Pepsi Light","123", 5,"Pepsi sin azucar", 1); 
 INSERT INTO Producto (nombre, codigoBarras, precio, descripcion, idProveedor) VALUES ("Te lipton de limon", "123", 5,"Te frio", 1); 
 
+SELECT * FROM Proveedor;
 SELECT I.id, I.nombre, P.nombre AS proveedor FROM Producto AS I JOIN Proveedor AS P ON P.id;
 
 DELETE FROM Producto WHERE id = 3;
 
 SELECT I.id, I.nombre, P.nombre AS proveedor FROM Producto AS I JOIN Proveedor AS P ON P.id;
+
+INSERT INTO Producto (nombre, codigoBarras, precio, descripcion, idProveedor) VALUES ("Te lipton de limon", "123", 5,"Te frio", 2); 
